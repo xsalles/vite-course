@@ -41,9 +41,16 @@
     width: 256px;
 }
 
+
 .profileSide{
     width: 60px;
     height: 60px;
+    margin-top: -40px;
+    margin-left: 92px;
+    border: solid var(--gray-800);
+    border-radius: 10px;
+    outline: 2px solid var(--green-500);
+    overflow: hidden;
 }
 
 .buttonSide{
