@@ -1,18 +1,11 @@
 import React from "react"
-import Post from "./components/post"
+import "./global.css"
+import IgniteFeed from "./components"
 
 function App() {
   return (
     <div>
-    <Post 
-    author="Pedro"
-    content = "Eu sou muito legal"
-    />
-
-    <Post 
-    author="Camilly"
-    content="Eu amo o Pedro"
-    />
+      <IgniteFeed/>
     </div>
   )
 }

@@ -1,0 +1,76 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99.99vw;
+    height: 100px;
+    background-color: #202024;
+    padding: 1.25rem 0;
+}
+
+.headerImage {
+    height: 2rem;
+}
+
+
+.wrapper{
+    max-width: 70rem;
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+.sidebarContainer{
+    background-color: var(--gray-800);
+    width: 256px;
+    height: 294px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border: 10px  var(--gray-800);
+    border-radius: 10px ;
+    overflow: hidden;
+    gap: 8px;
+    
+}
+
+.backgroundSide {
+    height: 72px;
+    width: 256px;
+}
+
+.profileSide{
+    width: 60px;
+    height: 60px;
+}
+
+.buttonSide{
+    border: solid var(--green-500);
+    border-radius: 10px;
+    color: var(--green-500);
+    background-color: var(--gray-800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 32px;
+    padding: 14px 14px 24px 24px;
+    height: 50px;
+    width: 192px;
+    cursor: pointer;
+}
+
+.postContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--gray-800);
+    border: solid var(--gray-800);
+    border-radius: 10px;
+}
+
+.lineSide{
+    margin-top: 24px;
+    background-color: var(--gray-600);
+}
+
