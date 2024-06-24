@@ -1,7 +1,14 @@
 import styles from "../../styles.module.css";
-
+import { useState } from "react";
 
 export default function Post() {
+
+     const [text, setText] = useState('');
+
+     const clearText = () => {
+      setText('')
+     }
+
   return (
     <div className={styles.postContainer}>
       <div className={styles.postName}>
@@ -36,8 +43,8 @@ export default function Post() {
         <div className={styles.postFeedback}>
             <strong className={styles.postTitleFeedback}>Deixe seu feedback</strong>
             
-            <textarea className={styles.postTextArea} placeholder="Nossa amigo, adorei seu post!"></textarea>
-            <button className={styles.postButton}>Publicar</button>
+            <textarea  onChange={(e) => setText(e.target.value)}   value={text} className={styles.postTextArea} placeholder="Nossa amigo, adorei seu post!"></textarea>
+            <button onClick={clearText} className={styles.postButton}>Publicar</button>
         </div>
         
     </div>
