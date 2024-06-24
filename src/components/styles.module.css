@@ -143,10 +143,11 @@
     width: 752px;
     height: 96px;
     background-color: black;
-    border: solid var(--green-500);
+    border: solid var(--gray-800);
     border-radius: 10px;
     margin-top: 16px;
     color: white;
+    resize: none;
 }
 
 .postButton{
