@@ -17,8 +17,8 @@ export default function Footer(){
             <div className={styles.footerEmail}>
                 <h1>Newsletter</h1>
                 <p>Seja o primeiro a receber as nossas novidades! Digite seu email abaixo para mais informações</p>
-                <input  type="email" placeholder="Your Email"/>
-                <button  type="submit" class="icon">&#9993;</button>
+                <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Your Email"/>
+                <button onClick={clearInput} type="submit" class="icon">&#9993;</button>
             </div>
         </footer>
     )
