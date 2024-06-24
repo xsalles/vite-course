@@ -7,9 +7,9 @@ export default function SideBar(){
         <div className={styles.sidebarContainer}>
             <img  className={styles.backgroundSide} src={BackgroundSide} alt="" />
             <img className={styles.profileSide} src="https://avatars.githubusercontent.com/u/160802244?v=4" alt="" />
-            <h1>Pedro Sales</h1>
+            <h1 className={styles.sideProfileName}>Pedro Sales</h1>
             <p>Dev Front-End</p>
-            <button className={styles.lineSide}></button>
+            <div className={styles.lineSide}></div>
             <button className={styles.buttonSide}>Edite seu perfil</button>
         </div>
     )

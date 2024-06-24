@@ -32,9 +32,9 @@
     border: 10px  var(--gray-800);
     border-radius: 10px ;
     overflow: hidden;
-    gap: 8px;
-    
+    gap: 8px;   
 }
+
 
 .backgroundSide {
     height: 72px;
@@ -53,6 +53,10 @@
     overflow: hidden;
 }
 
+.sideProfileName{
+    font-weight: bold;
+}
+
 .buttonSide{
     border: solid var(--green-500);
     border-radius: 10px;
@@ -68,16 +72,96 @@
     cursor: pointer;
 }
 
+.lineSide{
+    margin-top: 24px;
+    border: 1px solid var(--gray-600);
+    background-color: var(--gray-600);
+}
+
 .postContainer{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    width: 832px;
+    height: 621px;
+    flex-direction: column;
     background-color: var(--gray-800);
     border: solid var(--gray-800);
     border-radius: 10px;
 }
 
-.lineSide{
-    margin-top: 24px;
-    background-color: var(--gray-600);
+.postName{
+    display: flex;
+    width: 250px;
+    height: 100px;
+    margin-top: 40px;
+    gap: 10px;
 }
+
+.postImageAuthor{
+    width: 60px;
+    height: 60px;
+    margin-left: 40px;
+    border: solid var(--gray-600);
+    border-radius: 16px;
+    outline: 2px solid var(--green-500);
+}
+
+.postProfile{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.postProfileName{
+    font-weight: bold;
+}
+
+.postPublication{
+    width: 752px;
+    height: 206px;  
+    display: flex;
+    margin-left: 40px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.postLine{
+    border: 1px solid black;
+}
+
+.postFeedback{
+    margin-top: 24px;
+    margin-left: 40px;
+    justify-content: center;
+}
+
+.postTitleFeedback{
+    font-weight: bold;
+}
+
+.postTextArea{
+    width: 752px;
+    height: 96px;
+    background-color: black;
+    border: solid var(--green-500);
+    border-radius: 10px;
+    margin-top: 16px;
+    color: white;
+}
+
+.postButton{
+    width: 108px;
+    height: 49px;
+    cursor: pointer;
+    background-color: var(--green-500);
+    border: solid var(--green-500);
+    border-radius: 10px;
+    margin-top: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+   
+
+
 
