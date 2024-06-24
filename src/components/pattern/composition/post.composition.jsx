@@ -2,12 +2,11 @@ import styles from "../../styles.module.css";
 import { useState } from "react";
 
 export default function Post() {
+  const [text, setText] = useState("");
 
-     const [text, setText] = useState('');
-
-     const clearText = () => {
-      setText('')
-     }
+  const clearText = () => {
+    setText("");
+  };
 
   return (
     <div className={styles.postContainer}>
@@ -18,35 +17,52 @@ export default function Post() {
           alt=""
         />
         <div className={styles.postProfile}>
-        <strong className={styles.postProfileName}>Pedro Sales</strong>
-        <p>Dev Front-End</p>
+          <strong className={styles.postProfileName}>Pedro Sales</strong>
+          <p>Dev Front-End</p>
         </div>
-        </div>
-        
-        <div className={styles.postPublication}>
+      </div>
+
+      <div className={styles.postPublication}>
+        <p>
+          Fala Galera, meu nome é Pedro Sales e sou um furuo Desenvolvedor Web,
+          estou produzindo aplicações no react e estudando muito para crescer na
+          carreira!
+          <br />
+          <br />
+          <a href="#">#Segue ai</a>
+          <br />
+          <br />
           <p>
-            Fala Galera, meu nome é Pedro Sales e sou um furuo Desenvolvedor
-            Web, estou produzindo aplicações no react e estudando muito para
-            crescer na carreira!
+            GitHub:{" "}
+            <a href="https://github.com/xsalles">
+              https://github.com/xsalles <br />
+            </a>
+            Instagram:{" "}
+            <a href="https://www.instagram.com/xs.salles/?next=%2F">
+              https://www.instagram.com/xs.salles/?next=%2F
+            </a>{" "}
             <br />
-            <br />
-            <a href="#">#Segue ai</a>
-            <br />
-            <br />
-            <p>GitHub: <a href="https://github.com/xsalles">https://github.com/xsalles <br /></a>
-               Instagram: <a href="https://www.instagram.com/xs.salles/?next=%2F">https://www.instagram.com/xs.salles/?next=%2F</a> <br />
-               LinkedIn : <a href="https://www.linkedin.com/in/me/">https://www.linkedin.com/in/me/</a></p>
+            LinkedIn :{" "}
+            <a href="https://www.linkedin.com/in/me/">
+              https://www.linkedin.com/in/me/
+            </a>
           </p>
-          
-        </div>
-        <div className={styles.postLine}></div>
-        <div className={styles.postFeedback}>
-            <strong className={styles.postTitleFeedback}>Deixe seu feedback</strong>
-            
-            <textarea  onChange={(e) => setText(e.target.value)}   value={text} className={styles.postTextArea} placeholder="Nossa amigo, adorei seu post!"></textarea>
-            <button onClick={clearText} className={styles.postButton}>Publicar</button>
-        </div>
-        
+        </p>
+      </div>
+      <div className={styles.postLine}></div>
+      <div className={styles.postFeedback}>
+        <strong className={styles.postTitleFeedback}>Deixe seu feedback</strong>
+
+        <textarea
+          onChange={(e) => setText(e.target.value)}
+          value={text}
+          className={styles.postTextArea}
+          placeholder="Nossa amigo, adorei seu post!"
+        />
+        <button onClick={clearText} className={styles.postButton}>
+          Publicar
+        </button>
+      </div>
     </div>
   );
 }

@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 99.99vw;
     height: 100px;
     background-color: #202024;
     padding: 1.25rem 0;
@@ -81,7 +80,7 @@
 .postContainer{
     display: flex;
     width: 832px;
-    height: 621px;
+    height: 650px;
     flex-direction: column;
     background-color: var(--gray-800);
     border: solid var(--gray-800);
@@ -162,7 +161,62 @@
     font-weight: bold;
 }
 
-   
+.footerContainer{
+    display: flex;
+    height: 200px;
+    background-color: var(--gray-800);
+}
+
+.footerContainer img{
+    height: 45px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.footerContainer strong{
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 58px;
+    margin-left: 10px;
+    width: 300px;
+}
+
+.footerEmail{
+    margin-left: 1000px;
+    margin-top: 30px;
+}
+
+.footerEmail h1{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.footerEmail p {
+    margin-top: 15px;
+}
+
+.footerEmail input{
+    background-color: var(--gray-800);
+    color: white;
+    border: solid #202024;
+    border-bottom: 3px solid black;
+    outline: var(--gray-800);
+    margin-top: 20px;
+    caret-color: black;
+}
+
+.footerEmail button{
+    background-color: var(--gray-800);
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 
 
 
